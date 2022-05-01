@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
 driver = webdriver.Chrome(
-    executable_path="C:/Users/noepa/chromedriver.exe")
+    executable_path="../chromedriver.exe")
 
 sdbUsername = 'yourusername'
 sdbPassword = 'yourpassword'
@@ -151,7 +151,7 @@ def Close():
 Start()
 Cookies()
 Login(sdbUsername, sdbPassword)
-# Comment("https://www.instagram.com/instagram/", [0], "hey")
+Comment("https://www.instagram.com/instagram/", [0], "hey")
 Follow("https://www.instagram.com/instagram/")
-# LikeByUser("https://www.instagram.com/instagram/", [0])
+LikeByUser("https://www.instagram.com/instagram/", [0])
 Close()
